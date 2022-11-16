@@ -158,6 +158,7 @@ label{
     width: 120px;
     height: 40px;
     cursor: pointer;
+    transition: .3s;
 }
 
 .botao input:hover{
