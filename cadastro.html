@@ -9,30 +9,49 @@
     <link rel="stylesheet" href="styles/stylecad.css">
 </head>
 <body>
+
+    <script src="script.js"></script>
+
     <div class="box">
         <img id="arabesco" src="imagens/arabescog.png" alt="arabesco">
         <h1>Cadastro</h1>
         <form class="cadastro">
-            <div class="linha1">
+            <div class="nome">
                 <label>Nome</label>
-                <input type="text" placeholder="José Da Silva">
+                <input type="text" placeholder="José Da Silva" class="inputs">
+                <span class="span-required">Nome deve ter no minimo 3 caracteres!</span>
+            </div>
+
+            <div class="telefone">
                 <label>Telefone</label>
-                <input type="text" placeholder="(XX) X XXXX-XXXX">
+                <input type="text" placeholder="(XX) X XXXX-XXXX" class="inputs">
+                <span class="span-required">Digite apenas 11 numeros</span>
             </div>
 
-            <div class="linha2">
+            <div class="email">
                 <label>E-mail</label>
-                <input type="email" placeholder="josedasilva@gmail.com">
+                <input type="email" name="" required="" id="emailcad" placeholder="josedasilva@gmail.com" class="inputs">
+                <span class="span-required">Digite um email valido</span>
             </div>
 
-            <div class="linha3">
+            <div class="senha">
                 <label>Senha</label>
-                <input type="password" placeholder="********************">
+                <input type="password" name="" required=""  id="senhacad" placeholder="********************" class="inputs">
+                <span class="span-required">Digite uma senha com no minimo 8 caracteres</span>
             </div>
 
-            <div class="linha4">
+            <div class="rep_senha">
+                <label>Senha</label>
+                <input type="password" name="" required=""  id="senhacad" placeholder="********************" class="inputs">
+                <span class="span-required">Digite uma senha com no minimo 8 caracteres</span>
+            </div>
+
+            <div class="data">
                 <label>Data De Nascimento</label>
                 <input type="date">
+            </div>
+
+            <div class="genero">
                 <label>Gênero</label>
                 <select name="genero" id="">
                     <option value=""></option>
@@ -41,6 +60,7 @@
                     <option value="O">Outro</option>
                 </select>
             </div>
+
             <div class="botao">
                 <input type="submit" value="Cadastrar">
             </div>

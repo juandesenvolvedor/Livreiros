@@ -52,6 +52,10 @@ body{
 
 /*FORM*/
 
+.span-required{
+    display: none;
+}
+
 .cadastro{
     padding: 10px;
     padding-top: 50px;
@@ -60,9 +64,6 @@ body{
     border-radius: 10px;
 }
 
-.cadastro > div{ 
-
-}
 
 input{
     margin: 10px;
@@ -72,6 +73,7 @@ input{
     outline: none;
     border: 1px solid var(--cor04);
     border-radius: 7px;
+    transition: .2s;
 }
 
 input:focus{
@@ -85,47 +87,78 @@ label{
     font-weight: bold;
 }
 
-.linha1{
-    position: relative;
-    left: 30px;
+.nome{
+    position: absolute;
+    width: 400px;
+    left: 60px;
 }
 
-.linha1 input{
+.nome input{
     position: relative;
     left: 5px;
 }
 
-.linha2{
+.telefone{
+    position: relative;
+    left: 286px;
+}
+
+.telefone input{
+    position: relative;
+    left: 5px;
+}
+
+.email{
     position: relative;
     left: 30px;
 }
 
-.linha2 input{
+.email input{
     width: 455px;
 }
 
-.linha3{
-    position: relative;
-    left: 30px;
+.senha{
+    display: inline;
+    position: absolute;
+    left: 60px;
 }
 
-.linha3 input{
+.senha input{
     position: relative;
     left: 4px;
-    width: 455px;
 }
 
-.linha4{
+.rep_senha{
+    display: block;
+    position: relative;
+    left: 300px;
+}
+
+.rep_senha input{
+    position: relative;
+    left: 12px;
+}
+
+.data{
+    display: inline;
     position: relative;
     left: 30px;
 }
 
-.linha4 input{
+.data input{
     text-align: center;
     width: 140px;
 }
 
-.linha4 select{
+.genero{
+    display: inline;
+    position: relative;
+    left: 40px;
+}
+
+.genero select{
+    display: inline;
+    position: relative;
     font-weight: bold;
     background-color: var(--cor01);
     width: 140px;
@@ -134,11 +167,11 @@ label{
     border-radius: 7px;
 }
 
-.linha4 select:focus{
+.genero select:focus{
     border: 2px solid black;
 }
 
-.linha4 option{
+.genero option{
     font-weight: bold;
 }
 
@@ -179,4 +212,142 @@ label{
 .entrar a:hover{
     color: black;
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 647px) {
+
+    img{
+        width: 300px;
+    }
+
+    .box{
+        width: 300px;
+        height: 800px;
+    }
+
+    .cadastro{
+        width: 280px;
+        height: 600px;
+    }
+
+    input{
+        display: block;
+        position: relative;
+    }
+
+    label{
+        display: block;
+        position: relative;
+    }
+
+    .nome{
+        position: relative;
+        display: block;
+        left: 10px;
+    }
+
+    .nome label{
+        left: 17px;
+    }
+
+    .nome input{
+        width: 220px;
+    }
+
+    .telefone{
+        position: relative;
+        display: block;
+        left: 10px;
+    }
+
+    .telefone label{
+        left: 17px;
+    }
+
+    .telefone input{
+        width: 220px;
+    }
+
+    .email{
+        position: relative;
+        display: block;
+        left: 10px;
+    }
+
+    .email label{
+        left: 17px;
+    }
+
+    .email input{
+        left: 7px;
+        width: 220px;
+    }
+
+    .senha{
+        position: relative;
+        display: block;
+        left: 10px;
+    }
+
+    .senha label{
+        left: 17px;
+    }
+
+    .senha input{
+        left: 7px;
+        width: 220px;
+    }
+
+    .rep_senha{
+        position: relative;
+        display: block;
+        left: 10px;
+    }
+
+    .rep_senha label{
+        left: 17px;
+    }
+
+    .rep_senha input{
+        left: 7px;
+        width: 220px;
+    }
+
+    .data{
+        position: relative;
+        display: block;
+        left: 10px;
+    }
+
+    .data label{
+        left: 17px;
+    }
+
+    .data input{
+        left: 7px;
+        width: 220px;
+    }
+
+    .genero{
+        position: relative;
+        display: block;
+        left: 10px;
+    }
+
+    .genero label{
+        left: 17px;
+    }
+
+    .genero select{
+        left: 18px;
+        width: 230px;
+    }
+
+    .botao{
+        margin-top: 80px;
+        position: relative;
+        left: 25%;
+    }
+
 }
